@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/play.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Alphabet Clash</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <section class="h-screen bg-blue-950 text-white poppins-regular">
+      <div
+        class="container mx-auto px-4 h-[100%] bg-[url('../images/background.png')] bg-no-repeat bg-center bg-contain max-w-4xl"
+      >
+        <div
+          class="space-y-4 flex flex-col items-center justify-center h-[100%]"
+          id="intro-screen"
+        >
+          <h1 class="anton-regular text-7xl">ALPHABET CLASH</h1>
+          <p>Unleash Your Keyboard Kung Fu : Press "Play Now" to Play</p>
+          <button
+            class="bg-white rounded-lg text-black font-semibold py-2 px-5"
+            id="play-now-btn"
+          >
+            Play Now
+          </button>
+        </div>
+
+        <div
+          class="space-y-5 flex flex-col items-center justify-center h-[100%] hidden"
+          id="playground-screen"
+        >
+          <div
+            class="h-44 border-4 border-gray-500 rounded-md uppercase font-bold w-[85%] bg-[#ffffffcc] flex items-center justify-center text-6xl text-black"
+            id="playground-display"
+          >
+            y
+          </div>
+
+          <div class="text-center space-y-2">
+            <div>
+              <button id="q" class="kbd-btn">q</button>
+              <button id="w" class="kbd-btn">w</button>
+              <button id="e" class="kbd-btn">e</button>
+              <button id="r" class="kbd-btn">r</button>
+              <button id="t" class="kbd-btn">t</button>
+              <button id="y" class="kbd-btn">y</button>
+              <button id="u" class="kbd-btn">u</button>
+              <button id="i" class="kbd-btn">i</button>
+              <button id="o" class="kbd-btn">o</button>
+              <button id="p" class="kbd-btn">p</button>
+            </div>
+            <div>
+              <button id="a" class="kbd-btn">a</button>
+              <button id="s" class="kbd-btn">s</button>
+              <button id="d" class="kbd-btn">d</button>
+              <button id="f" class="kbd-btn">f</button>
+              <button id="g" class="kbd-btn">g</button>
+              <button id="h" class="kbd-btn">h</button>
+              <button id="j" class="kbd-btn">j</button>
+              <button id="k" class="kbd-btn">k</button>
+              <button id="l" class="kbd-btn">l</button>
+            </div>
+            <div>
+              <button id="z" class="kbd-btn">z</button>
+              <button id="x" class="kbd-btn">x</button>
+              <button id="c" class="kbd-btn">c</button>
+              <button id="v" class="kbd-btn">v</button>
+              <button id="b" class="kbd-btn">b</button>
+              <button id="n" class="kbd-btn">n</button>
+              <button id="m" class="kbd-btn">m</button>
+            </div>
+          </div>
+
+          <div class="flex justify-between w-[85%]">
+            <button class="bg-[#894189] py-1 px-4 rounded-full text-sm">
+              <span>Life</span>
+              <span><i class="fa-solid fa-heart-circle-bolt"></i></span>
+              <span id="life">3</span>
+            </button>
+
+            <button class="bg-purple-700 py-1 px-4 rounded-full text-sm">
+              <span>Score</span>
+              <span><i class="fa-solid fa-dollar-sign"></i></span>
+              <span id="score">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center h-[100%] hidden"
+          id="game-over-screen"
+        >
+          <div
+            class="space-y-4 text-center bg-[#ffffff40] py-6 px-10 rounded-lg"
+          >
+            <h1 class="text-4xl">
+              <span class="poppins-bold">Score :</span>
+              <span id="game-score">14</span>
+            </h1>
+
+            <button
+              class="bg-white rounded-lg text-black font-semibold py-2 px-5"
+              id="play-again-btn"
+            >
+              Play Again
+            </button>
+            <p class="text-sm">Practice will make you Pro</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "alpha-clash",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "watch:css": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

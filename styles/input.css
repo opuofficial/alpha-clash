@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kbd-btn {
+  @apply border border-gray-200 border-b-2 w-8 h-8 rounded-md bg-white text-black;
+}
+
+.current-key {
+  @apply bg-orange-400;
+}
